@@ -20,6 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Tiago Lima, Product Designer com mais de 4 anos de experiência em SaaS B2B, Product-Led Growth (PLG) e UX/UI Design.">
   <title>Tiago Lima — Product Designer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -376,56 +377,59 @@
     .cert-card span { font-size: .78rem; color: var(--muted); }
 
     /* TESTIMONIALS / FEEDBACKS */
-    .testimonials {
+    .testimonials-grid {
       display: grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
       margin-top: 45px;
     }
-    .feedback-stack { display: grid; gap: 20px; }
     .quote {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       padding: 30px;
       border: 1px solid var(--line);
       border-radius: 20px;
       background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .quote:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+      border-color: #cbd5e1;
     }
     .quote.featured {
+      grid-column: 1 / -1;
       padding: 36px;
       border-color: #d2e3fc;
       background: linear-gradient(145deg, #f8fbff, #ffffff);
     }
-    .mark { color: var(--blue); font-size: 2.4rem; font-weight: 800; line-height: .6; }
-    .quote blockquote { flex: 1; margin: 20px 0 24px; font-size: .96rem; line-height: 1.65; }
+    .mark { color: var(--blue); font-size: 2.5rem; font-weight: 800; line-height: .6; }
+    .quote blockquote { flex: 1; margin: 18px 0 24px; font-size: .95rem; line-height: 1.65; color: #374151; }
     .quote blockquote p { margin: 0; }
     .quote blockquote p + p { margin-top: 14px; }
-    .quote.featured blockquote { font-size: 1rem; }
+    .quote.featured blockquote { font-size: 1.02rem; }
     .person {
       display: flex;
       align-items: center;
       gap: 14px;
       padding-top: 18px;
       border-top: 1px solid var(--line);
+      margin-top: auto;
     }
     .avatar {
       display: block;
-      flex: 0 0 44px;
-      width: 44px;
-      height: 44px;
+      flex: 0 0 46px;
+      width: 46px;
+      height: 46px;
       border-radius: 50%;
       object-fit: cover;
+      border: 2px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
     .person strong, .person span { display: block; }
-    .person strong { font-size: .88rem; font-weight: 700; }
-    .person span { color: var(--muted); font-size: .76rem; }
-    .more {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .quote.compact blockquote { margin: 14px 0; font-size: .9rem; }
+    .person strong { font-size: .9rem; font-weight: 700; color: var(--ink); }
+    .person span { color: var(--muted); font-size: .78rem; }
 
     /* CONTATO */
     .contact { padding-bottom: 60px; }
@@ -487,10 +491,11 @@
     @media (max-width: 900px) {
       section { padding: 75px 0; }
       .hero { min-height: auto; }
-      .hero-grid, .about-grid, .case-card, .contact-box, .testimonials, .edu-grid {
+      .hero-grid, .about-grid, .case-card, .contact-box, .testimonials-grid, .edu-grid {
         grid-template-columns: 1fr;
         gap: 36px;
       }
+      .quote.featured { grid-column: span 1; }
       .visual { max-width: 480px; width: 100%; min-height: 340px; margin: auto; }
       .skills { grid-template-columns: 1fr; }
       .more { grid-template-columns: 1fr; }
@@ -788,13 +793,13 @@
         <h2>Como é trabalhar comigo.</h2>
         <p class="intro">Palavras de pessoas que acompanharam meu trabalho de perto.</p>
 
-        <div class="testimonials">
-          <!-- CRISTIAN GOMES (FEATURED) -->
+        <div class="testimonials-grid">
+          <!-- CRISTIAN GOMES (FEATURED - SPANS 2 COLUMNS) -->
           <article class="quote featured">
             <span class="mark">“</span>
             <blockquote>
               <p>Tive o prazer de liderar o Tiago como Product Design Lead, e acompanhar sua evolução de perto através de nossos 1:1s foi uma das partes mais interessantes desse período. Vi o Tiago crescer tecnicamente e ganhar cada vez mais autonomia e maturidade nas decisões de design.</p>
-              <p>Uma das coisas que mais destaca o Tiago é a forma como ele encarar desafios: você entrega um problema para ele e pode ter certeza que ele vai atrás até resolver, sempre testando diferentes possibilidades para chegar numa entrega ainda melhor. Isso ficou muito claro quando ele assumiu um produto extremamente complexo, voltado para grandes varejistas, cheio de regras de negócio internas e externas, e em pouco tempo já estava colaborando com soluções e entregando de forma autônoma.</p>
+              <p>Uma das coisas que mais destaca o Tiago é a forma como ele encara desafios: você entrega um problema para ele e pode ter certeza que ele vai atrás até resolver, sempre testando diferentes possibilidades para chegar numa entrega ainda melhor. Isso ficou muito claro quando ele assumiu um produto extremamente complexo, voltado para grandes varejistas, cheio de regras de negócio internas e externas, e em pouco tempo já estava colaborando com soluções e entregando de forma autônoma.</p>
               <p>Além da competência técnica, o Tiago é o tipo de colega que todo time quer ter: prestativo, colaborativo e sempre disposto a enfrentar o problema junto com você, não só para você. Tenho certeza de que ele vai continuar entregando um trabalho de excelência em qualquer time que tiver a sorte de contar com ele.</p>
             </blockquote>
             <div class="person">
@@ -806,47 +811,43 @@
             </div>
           </article>
 
-          <div class="feedback-stack">
-            <!-- VICTORIA CRUZ -->
-            <article class="quote">
-              <span class="mark">“</span>
-              <blockquote>
-                <p>Pude trabalhar lado a lado com o Tiago na unidade de Retail Experience na Selbetti por mais de um ano, e posso afirmar com toda certeza que ele é um colega e profissional excelente.</p>
-                <p>Extremamente colaborativo, se comunica muito bem — inclusive com PMs, devs e outras áreas — e transforma com excelência requisitos de negócio complexos em interfaces simples, centradas no usuário, sempre equilibrando viabilidade técnica.</p>
-                <p>Além disso, o Tiago sempre foi muito prestativo, disposto a ajudar desde o início e está sempre buscando aprender cada vez mais. Durante o período que trabalhamos juntos, notei uma evolução muito grande nas entregas do time de UX devido à qualidade das nossas trocas diárias.</p>
-                <p>É uma pessoa que recomendo para qualquer empresa que preze por profissionais dedicados, que tenham atenção a detalhes e uma capacidade excepcional de trabalhar em equipe.</p>
-              </blockquote>
-              <div class="person">
-                <img class="avatar" src="pessoas/victoria.jpeg" alt="Victoria Cruz">
-                <div>
-                  <strong>Victoria Cruz</strong>
-                  <span>Product Designer · Trabalhou na mesma equipe que Tiago</span>
-                </div>
+          <!-- VICTORIA CRUZ -->
+          <article class="quote">
+            <span class="mark">“</span>
+            <blockquote>
+              <p>Pude trabalhar lado a lado com o Tiago na unidade de Retail Experience na Selbetti por mais de um ano, e posso afirmar com toda certeza que ele é um colega e profissional excelente.</p>
+              <p>Extremamente colaborativo, se comunica muito bem — inclusive com PMs, devs e outras áreas — e transforma com excelência requisitos de negócio complexos em interfaces simples, centradas no usuário, sempre equilibrando viabilidade técnica.</p>
+              <p>Além disso, o Tiago sempre foi muito prestativo, disposto a ajudar desde o início e está sempre buscando aprender cada vez mais. Durante o período que trabalhamos juntos, notei uma evolução muito grande nas entregas do time de UX devido à qualidade das nossas trocas diárias.</p>
+              <p>É uma pessoa que recomendo para qualquer empresa que preze por profissionais dedicados, que tenham atenção a detalhes e uma capacidade excepcional de trabalhar em equipe.</p>
+            </blockquote>
+            <div class="person">
+              <img class="avatar" src="pessoas/victoria.jpeg" alt="Victoria Cruz">
+              <div>
+                <strong>Victoria Cruz</strong>
+                <span>Product Designer · Trabalhou na mesma equipe que Tiago</span>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- BRUNO HENRIQUE VILLWOCK -->
-            <article class="quote">
-              <span class="mark">“</span>
-              <blockquote>
-                <p>Tive a oportunidade de trabalhar com o Tiago e acompanhar de perto sua trajetória como UX Designer. Durante esse período, ele sempre demonstrou muita dedicação, curiosidade e comprometimento com tudo o que se propunha a fazer.</p>
-                <p>Além de ser uma pessoa extremamente prestativa e colaborativa, ele se destacava pela vontade constante de aprender e evoluir. Sua capacidade de contribuir para discussões estratégicas de produto, trazendo uma visão centrada no usuário sem perder de vista os objetivos do negócio, fazia com que suas entregas frequentemente superassem as expectativas.</p>
-                <p>Também destaco sua postura profissional e a facilidade em trabalhar em equipe, construindo relações de confiança e contribuindo para um ambiente mais colaborativo e produtivo. Foi uma experiência muito positiva trabalhar ao lado dele, e tenho certeza de que continuará gerando impacto por onde passar. Recomendo seu trabalho com muita confiança.</p>
-              </blockquote>
-              <div class="person">
-                <img class="avatar" src="pessoas/bruno.jpeg" alt="Bruno Henrique Villwock">
-                <div>
-                  <strong>Bruno Henrique Villwock</strong>
-                  <span>UX/UI Designer Pleno · Trabalhou na mesma equipe que Tiago</span>
-                </div>
+          <!-- BRUNO HENRIQUE VILLWOCK -->
+          <article class="quote">
+            <span class="mark">“</span>
+            <blockquote>
+              <p>Tive a oportunidade de trabalhar com o Tiago e acompanhar de perto sua trajetória como UX Designer. Durante esse período, ele sempre demonstrou muita dedicação, curiosidade e comprometimento com tudo o que se propunha a fazer.</p>
+              <p>Além de ser uma pessoa extremamente prestativa e colaborativa, ele se destacava pela vontade constante de aprender e evoluir. Sua capacidade de contribuir para discussões estratégicas de produto, trazendo uma visão centrada no usuário sem perder de vista os objetivos do negócio, fazia com que suas entregas frequentemente superassem as expectativas.</p>
+              <p>Também destaco sua postura profissional e a facilidade em trabalhar em equipe, construindo relações de confiança e contribuindo para um ambiente mais colaborativo e produtivo. Foi uma experiência muito positiva trabalhar ao lado dele, e tenho certeza de que continuará gerando impacto por onde passar. Recomendo seu trabalho com muita confiança.</p>
+            </blockquote>
+            <div class="person">
+              <img class="avatar" src="pessoas/bruno.jpeg" alt="Bruno Henrique Villwock">
+              <div>
+                <strong>Bruno Henrique Villwock</strong>
+                <span>UX/UI Designer Pleno · Trabalhou na mesma equipe que Tiago</span>
               </div>
-            </article>
-          </div>
-        </div>
+            </div>
+          </article>
 
-        <div class="more">
           <!-- LEONARDO DOMINONI VIEIRA -->
-          <article class="quote compact">
+          <article class="quote">
             <span class="mark">“</span>
             <blockquote>
               <p>Tiago é um profissional muito proativo, sempre buscando entender melhor os projetos e como ajudar de alguma forma, sempre em busca de mais conhecimento e se atualizando. Está sempre disposto a trocar ideias, atento aos detalhes e contribuindo com a sua visão. Uma ótima pessoa para trabalhar junto na equipe.</p>
@@ -861,7 +862,7 @@
           </article>
 
           <!-- VIVIANE FONSECA M. SILVA -->
-          <article class="quote compact">
+          <article class="quote">
             <span class="mark">“</span>
             <blockquote>
               <p>Trabalhar com o Tiago é uma experiência incrível. Ele é um profissional com quem sempre dá para trocar ideias e conhecimentos, estando sempre disposto a ajudar a equipe.</p>
