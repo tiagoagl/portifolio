@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Fundo escuro arredondado de alto contraste (funciona em abas claras, escuras e mobile) -->
-  <rect width="64" height="64" rx="16" fill="#111827" />
+  <!-- Círculo branco de fundo -->
+  <circle cx="32" cy="32" r="32" fill="#ffffff" />
   
-  <!-- Letra 't' vetorial sólida (Inter Extra Bold) -->
-  <path d="M 25 23 L 18.5 23 L 18.5 29 L 25 29 L 25 41.2 C 25 46 28 48.5 33.2 48.5 C 35.6 48.5 37.8 47.8 39.2 46.8 L 37.5 41.8 C 36.4 42.5 35 43 33.6 43 C 31.2 43 30.6 41.8 30.6 39.4 L 30.6 29 L 38 29 L 38 23 L 30.6 23 L 30.6 13.5 L 25 13.5 Z" fill="#ffffff" />
+  <!-- Letra 't' preta vetorial sólida (Inter Extra Bold) -->
+  <path d="M 25 23 L 18.5 23 L 18.5 29 L 25 29 L 25 41.2 C 25 46 28 48.5 33.2 48.5 C 35.6 48.5 37.8 47.8 39.2 46.8 L 37.5 41.8 C 36.4 42.5 35 43 33.6 43 C 31.2 43 30.6 41.8 30.6 39.4 L 30.6 29 L 38 29 L 38 23 L 30.6 23 L 30.6 13.5 L 25 13.5 Z" fill="#111827" />
   
   <!-- Ponto final azul da marca -->
   <circle cx="44.5" cy="44.5" r="4" fill="#1a73e8" />
