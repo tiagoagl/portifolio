@@ -1,25 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <style>
-    .brand-text {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 46px;
-      letter-spacing: -0.05em;
-      fill: #111827;
-      dominant-baseline: central;
-      text-anchor: middle;
-    }
-    .brand-dot {
-      fill: #1a73e8;
-    }
-    @media (prefers-color-scheme: dark) {
-      .brand-text {
-        fill: #ffffff;
-      }
-      .brand-dot {
-        fill: #3b82f6;
-      }
-    }
-  </style>
-  <text x="32" y="31" class="brand-text">t<tspan class="brand-dot">.</tspan></text>
+  <!-- Fundo escuro arredondado de alto contraste (funciona em abas claras, escuras e mobile) -->
+  <rect width="64" height="64" rx="16" fill="#111827" />
+  
+  <!-- Letra 't' vetorial sólida (Inter Extra Bold) -->
+  <path d="M 25 23 L 18.5 23 L 18.5 29 L 25 29 L 25 41.2 C 25 46 28 48.5 33.2 48.5 C 35.6 48.5 37.8 47.8 39.2 46.8 L 37.5 41.8 C 36.4 42.5 35 43 33.6 43 C 31.2 43 30.6 41.8 30.6 39.4 L 30.6 29 L 38 29 L 38 23 L 30.6 23 L 30.6 13.5 L 25 13.5 Z" fill="#ffffff" />
+  
+  <!-- Ponto final azul da marca -->
+  <circle cx="44.5" cy="44.5" r="4" fill="#1a73e8" />
 </svg>
